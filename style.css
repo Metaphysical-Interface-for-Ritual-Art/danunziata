@@ -1,34 +1,38 @@
-/* ARQUIVO: style.css */
+/* ARQUIVO: style.css (Versão Final com Alinhamento Esquerdo e Fonte Pixelada) */
+
+/* 1. CARREGAR A FONTE VT323 (Estilo Pixel/Terminal) */
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
 body {
-    /* Cor de fundo e a fonte mais robusta */
     background-color: #000000;
     color: #00FF00; 
-    font-family: 'Lucida Console', Monaco, monospace; /* Tipografia Clássica do DOS */
+    font-family: 'VT323', monospace; 
     
-    /* Centralização na tela */
+    /* REMOVEMOS A CENTRALIZAÇÃO: Alinhamos tudo à esquerda e ao topo */
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start; 
+    align-items: flex-start;
     min-height: 100vh;
     margin: 0;
-    overflow: hidden; 
+    padding: 20px; /* Adicionamos um padding para não colar na borda */
+    overflow-x: hidden; 
 }
 
 #container {
-    padding: 20px;
+    width: 100%;
     max-width: 90%;
+    /* removemos o padding extra, já que o body tem padding */
     text-align: left;
 }
 
 #typewriter {
-    /* Tamanho ampliado para o impacto */
-    font-size: 3em; 
+    font-size: 4em; 
     
-    /* Efeito de digitação e cursor */
-    border-right: 2px solid #00FF00;
+    /* Ajuste do cursor para parecer o prompt piscante */
+    border-right: 4px solid #00FF00; 
     white-space: nowrap; 
     margin: 0;
-    padding-right: 5px; 
+    padding-right: 10px; /* Mais espaço para o cursor */
     overflow: hidden;
     animation: 
         blink-caret .75s step-end infinite; 
@@ -40,15 +44,17 @@ body {
     50% { border-color: #00FF00; }
 }
 
-/* Estilo do link de acesso */
+/* Estilo do link de acesso/prompt */
 #access-link {
     color: #00FFFF;
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 2em;
     display: block;
     margin-top: 20px;
     cursor: pointer;
     transition: color 0.3s;
+    /* Alinha com o lado esquerdo */
+    text-align: left; 
 }
 
 #access-link:hover {
