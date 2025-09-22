@@ -1,14 +1,14 @@
-/* ARQUIVO: style.css (Versão FINAL da Estética) */
+/* ARQUIVO: style.css (Versão FINAL com Fonte Monofett e Link Branco) */
 
-/* 1. CARREGAR A FONTE PRESS START 2P (Pixelizada e Bruta) */
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
+/* 1. CARREGAR A NOVA FONTE MONOFETT (Pixelada, mas mais 'suave') */
+@import url('https://fonts.googleapis.com/css2?family=Monofett&family=Press+Start+2P&family=VT323&display=swap');
 
 body {
     background-color: #000000;
     color: #00FF00; 
     
-    /* Nova fonte: Press Start 2P (a quebra e as falhas) */
-    font-family: 'Press Start 2P', monospace; 
+    /* Nova fonte: Monofett */
+    font-family: 'Monofett', monospace; 
     
     /* Remoção da centralização */
     display: flex;
@@ -27,10 +27,9 @@ body {
 }
 
 #typewriter {
-    /* O tamanho grande funciona melhor com essa fonte */
-    font-size: 3em; 
+    font-size: 4em; 
     
-    /* Ajuste do cursor */
+    /* Cursor */
     border-right: 4px solid #00FF00; 
     white-space: nowrap; 
     margin: 0;
@@ -48,12 +47,12 @@ body {
 
 /* Estilo do link de acesso/prompt */
 #access-link {
-    /* COR BRANCA solicitada */
+    /* Cor BRANCA solicitada */
     color: #FFFFFF; 
     text-decoration: none;
-    font-size: 1.5em; /* Reduzimos um pouco o tamanho para não brigar com o título */
+    font-size: 1.8em; /* Ajustei um pouco o tamanho */
     display: block;
-    margin-top: 20px;
+    margin-top: 30px; /* Mais espaço após a frase */
     cursor: pointer;
     transition: color 0.3s;
     text-align: left; 
