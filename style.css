@@ -1,38 +1,40 @@
-/* ARQUIVO: style.css (Versão Final com Alinhamento Esquerdo e Fonte Pixelada) */
+/* ARQUIVO: style.css (Versão FINAL da Estética) */
 
-/* 1. CARREGAR A FONTE VT323 (Estilo Pixel/Terminal) */
-@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+/* 1. CARREGAR A FONTE PRESS START 2P (Pixelizada e Bruta) */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
 
 body {
     background-color: #000000;
     color: #00FF00; 
-    font-family: 'VT323', monospace; 
     
-    /* REMOVEMOS A CENTRALIZAÇÃO: Alinhamos tudo à esquerda e ao topo */
+    /* Nova fonte: Press Start 2P (a quebra e as falhas) */
+    font-family: 'Press Start 2P', monospace; 
+    
+    /* Remoção da centralização */
     display: flex;
     justify-content: flex-start; 
     align-items: flex-start;
     min-height: 100vh;
     margin: 0;
-    padding: 20px; /* Adicionamos um padding para não colar na borda */
+    padding: 20px; 
     overflow-x: hidden; 
 }
 
 #container {
     width: 100%;
     max-width: 90%;
-    /* removemos o padding extra, já que o body tem padding */
     text-align: left;
 }
 
 #typewriter {
-    font-size: 4em; 
+    /* O tamanho grande funciona melhor com essa fonte */
+    font-size: 3em; 
     
-    /* Ajuste do cursor para parecer o prompt piscante */
+    /* Ajuste do cursor */
     border-right: 4px solid #00FF00; 
     white-space: nowrap; 
     margin: 0;
-    padding-right: 10px; /* Mais espaço para o cursor */
+    padding-right: 10px; 
     overflow: hidden;
     animation: 
         blink-caret .75s step-end infinite; 
@@ -46,19 +48,19 @@ body {
 
 /* Estilo do link de acesso/prompt */
 #access-link {
-    color: #00FFFF;
+    /* COR BRANCA solicitada */
+    color: #FFFFFF; 
     text-decoration: none;
-    font-size: 2em;
+    font-size: 1.5em; /* Reduzimos um pouco o tamanho para não brigar com o título */
     display: block;
     margin-top: 20px;
     cursor: pointer;
     transition: color 0.3s;
-    /* Alinha com o lado esquerdo */
     text-align: left; 
 }
 
 #access-link:hover {
-    color: #00FF00;
+    color: #00FF00; /* Destaque verde neon no hover */
 }
 
 /* --- ESTILOS PARA AS PÁGINAS INTERNAS (FUTURO) --- */
