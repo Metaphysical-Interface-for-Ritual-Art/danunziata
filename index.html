@@ -9,24 +9,27 @@
 </head>
 <body>
     <div id="container">
-        <h1 id="typewriter"></h1>
+        <h1 id="typewriter">0010 </h1>
         
-        <a id="access-link" href="sobre.html" style="display: none;">> ACESSAR_SITE</a>
+        <a id="access-link" href="sobre.html" style="display: none;">] ACESSAR_SISTEMA</a>
     </div>
 
     <script>
-        // JAVASCRIPT: Sua frase filosófica
+        // JAVASCRIPT: O texto a ser datilografado começa após o prefixo '0010 '
         const text = "VOCÊ SABE QUEM É VOCÊ?"; 
         const speed = 85; 
         let i = 0;
+        
+        // O elemento que vai receber o texto
+        const typewriterElement = document.getElementById("typewriter");
 
         function typeWriter() {
             if (i < text.length) {
-                document.getElementById("typewriter").innerHTML += text.charAt(i);
+                typewriterElement.innerHTML += text.charAt(i);
                 i++;
                 setTimeout(typeWriter, speed);
             } else {
-                // Quando terminar de digitar, mostra o link de acesso
+                // Quando terminar de digitar, mostra o link e adiciona um prompt vazio
                 document.getElementById('access-link').style.display = 'block';
             }
         }
