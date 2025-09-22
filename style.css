@@ -1,8 +1,11 @@
 /* ARQUIVO: style.css */
 body {
-    background-color: #000000; /* Fundo Preto Sólido */
-    color: #00FF00; /* Texto Verde Neon */
-    font-family: 'Courier New', Courier, monospace; /* Fonte Monospace de terminal */
+    /* Cor de fundo e a fonte mais robusta */
+    background-color: #000000;
+    color: #00FF00; 
+    font-family: 'Lucida Console', Monaco, monospace; /* Tipografia Clássica do DOS */
+    
+    /* Centralização na tela */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,8 +21,11 @@ body {
 }
 
 #typewriter {
-    font-size: 1.8em;
-    border-right: 2px solid #00FF00; /* Cursor piscante */
+    /* Tamanho ampliado para o impacto */
+    font-size: 3em; 
+    
+    /* Efeito de digitação e cursor */
+    border-right: 2px solid #00FF00;
     white-space: nowrap; 
     margin: 0;
     padding-right: 5px; 
@@ -36,7 +42,7 @@ body {
 
 /* Estilo do link de acesso */
 #access-link {
-    color: #00FFFF; /* Ciano Neon para destaque */
+    color: #00FFFF;
     text-decoration: none;
     font-size: 1.5em;
     display: block;
@@ -49,7 +55,7 @@ body {
     color: #00FF00;
 }
 
-/* Estilos para as páginas internas (adicionamos isso para o menu futuro) */
+/* --- ESTILOS PARA AS PÁGINAS INTERNAS (FUTURO) --- */
 
 header {
     width: 100%;
