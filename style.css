@@ -1,13 +1,16 @@
-/* ARQUIVO: style.css (Versão Final e Corrigida) */
+/* ARQUIVO: style.css (Versão Final com Fonte Pixeloid Sans) */
 
-/* 1. Carregar a fonte Inconsolata */
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+/* 1. CARREGAR A NOVA FONTE PIXELOID SANS */
+@import url('https://fonts.googleapis.com/css2?family=Pixeloid+Sans&display=swap');
 
 body {
     background-color: #000000;
-    color: #00FF00; /* Cor padrão para todo o texto */
-    font-family: 'Inconsolata', monospace; /* Fonte com estética de terminal, mas clara */
+    color: #00FF00;
     
+    /* Nova fonte: Pixeloid Sans */
+    font-family: 'Pixeloid Sans', monospace; 
+    
+    /* Remoção da centralização */
     display: flex;
     justify-content: flex-start; 
     align-items: flex-start;
@@ -24,7 +27,6 @@ body {
 }
 
 #typewriter {
-    /* Corrigir a cor do título para o verde neon */
     color: #00FF00;
     font-size: 3em; 
     
@@ -46,7 +48,7 @@ body {
 
 /* Estilo do link de acesso/prompt */
 #access-link {
-    color: #FFFFFF; /* Cor Branca do link */
+    color: #FFFFFF;
     text-decoration: none;
     font-size: 1.5em; 
     display: block;
