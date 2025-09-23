@@ -1,91 +1,37 @@
-/* ARQUIVO: style.css (Versão Final com Fonte VT323) */
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camiladanunziata: Interface Metafísica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <h1 id="typewriter"></h1>
+        <a id="access-link" href="sobre.html" style="display: none;">] Acessar sistema</a>
+    </div>
 
-/* 1. CARREGAR A FONTE VT323 */
-@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+    <script>
+        const text = "0101 Você sabe quem é você?"; 
+        const speed = 85; 
+        let i = 0;
+        
+        const typewriterElement = document.getElementById("typewriter");
 
-body {
-    background-color: #000000;
-    color: #00FF00;
-    
-    /* Usar a fonte VT323 */
-    font-family: 'VT323', monospace; 
-    
-    display: flex;
-    justify-content: flex-start; 
-    align-items: flex-start;
-    min-height: 100vh;
-    margin: 0;
-    padding: 20px; 
-    overflow-x: hidden; 
-}
+        function typeWriter() {
+            if (i < text.length) {
+                typewriterElement.innerHTML += text.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            } else {
+                document.getElementById('access-link').style.display = 'block';
+            }
+        }
 
-#container {
-    width: 100%;
-    max-width: 90%;
-    text-align: left;
-}
-
-#typewriter {
-    color: #00FF00;
-    font-size: 3em; 
-    
-    border-right: 4px solid #00FF00; 
-    white-space: nowrap; 
-    margin: 0;
-    padding-right: 10px; 
-    overflow: hidden;
-    animation: 
-        blink-caret .75s step-end infinite; 
-}
-
-@keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: #00FF00; }
-}
-
-#access-link {
-    color: #FFFFFF;
-    text-decoration: none;
-    font-size: 1.5em; 
-    display: block;
-    margin-top: 30px; 
-    cursor: pointer;
-    transition: color 0.3s;
-    text-align: left; 
-}
-
-#access-link:hover {
-    color: #00FF00;
-}
-
-/* --- ESTILOS PARA AS PÁGINAS INTERNAS --- */
-
-header {
-    width: 100%;
-    border-bottom: 1px solid #00FF00; 
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-}
-
-nav a {
-    color: #00FF00;
-    text-decoration: none;
-    margin-right: 15px;
-    padding: 5px;
-    transition: color 0.3s;
-}
-
-nav a:hover, nav a.active {
-    color: #00FFFF;
-    background-color: rgba(0, 255, 0, 0.1); 
-}
-
-.prompt {
-    color: #00FF00;
-    margin-bottom: 5px;
-}
-
-.response {
-    color: #00FFFF;
-    margin-top: 0;
-}
+        window.onload = function() {
+            setTimeout(typeWriter, 1500); 
+        };
+    </script>
+</body>
+</html>
