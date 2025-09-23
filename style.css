@@ -86,6 +86,8 @@ nav a:hover, nav a.active {
 }
 
 .response {
-    color: #00FFFF;
+    color: #C0C0C0; /* Cor do texto agora é cinza claro */
     margin-top: 0;
+    font-size: 1.2em;
+    line-height: 1.5em; 
 }
