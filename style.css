@@ -6,7 +6,7 @@
 body {
     background-color: #000000;
     color: #39FF14;
-    font-family: 'Press Start 2P', monospace; 
+    font-family: 'VT323', monospace; 
     
     display: flex;
     justify-content: flex-start; 
