@@ -1,92 +1,29 @@
-/* ARQUIVO: style.css (Versão com Menu Vertical e Fonte Maior) */
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camiladanunziata: Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <nav>
+                <a href="sobre.html" class="active">] Sobre</a>
+                <a href="trabalhos.html">] Trabalhos</a>
+                <a href="projetos.html">] Projetos Especiais</a>
+                <a href="textos.html">] Textos</a>
+                <a href="contato.html">] Contato</a>
+            </nav>
+        </header>
 
-/* 1. CARREGAR A FONTE VT323 */
-@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
-
-body {
-    background-color: #000000;
-    color: #39FF14; 
-    font-family: 'VT323', monospace; 
-    
-    display: flex;
-    justify-content: flex-start; 
-    align-items: flex-start;
-    min-height: 100vh;
-    margin: 0;
-    padding: 20px; 
-    overflow-x: hidden; 
-}
-
-#container {
-    width: 100%;
-    max-width: 90%;
-    text-align: left;
-}
-
-#typewriter {
-    color: #39FF14; 
-    font-size: 3em; 
-    
-    border-right: 4px solid #39FF14; 
-    white-space: nowrap; 
-    margin: 0;
-    padding-right: 10px; 
-    overflow: hidden;
-    animation: 
-        blink-caret .75s step-end infinite; 
-}
-
-@keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: #39FF14; }
-}
-
-#access-link {
-    color: #FFFFFF;
-    text-decoration: none;
-    font-size: 1.5em; 
-    display: block;
-    margin-top: 30px; 
-    cursor: pointer;
-    transition: color 0.3s;
-    text-align: left; 
-}
-
-#access-link:hover {
-    color: #39FF14;
-}
-
-/* --- ESTILOS PARA AS PÁGINAS INTERNAS --- */
-
-header {
-    width: 100%;
-    border-bottom: none; /* Remove a linha de baixo do menu */
-    padding-bottom: 0;
-    margin-bottom: 20px;
-}
-
-nav a {
-    color: #39FF14;
-    text-decoration: none;
-    margin-right: 0;
-    margin-bottom: 10px; /* Adiciona espaço entre os links */
-    padding: 5px;
-    transition: color 0.3s;
-    display: block; /* Faz os links ficarem um embaixo do outro */
-    font-size: 1.5em; /* Aumenta o tamanho da fonte */
-}
-
-nav a:hover, nav a.active {
-    color: #00FFFF;
-    background-color: rgba(0, 255, 0, 0.1); 
-}
-
-.prompt {
-    color: #39FF14;
-    margin-bottom: 5px;
-}
-
-.response {
-    color: #00FFFF;
-    margin-top: 0;
-}
+        <main>
+            <p class="prompt">0101 Acessando: Sobre</p>
+            <p class="response">
+                Interface Metafísica é uma pesquisa artística que explora a interconexão entre a consciência humana, a tecnologia e os mistérios do universo.
+            </p>
+        </main>
+    </div>
+</body>
+</html>
