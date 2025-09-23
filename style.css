@@ -1,16 +1,18 @@
-/* ARQUIVO: style.css (Versão Final com Fonte Pixeloid Sans) */
+/* ARQUIVO: style.css (Versão Final com Fonte Terminus) */
 
-/* 1. CARREGAR A NOVA FONTE PIXELOID SANS */
-@import url('https://fonts.googleapis.com/css2?family=Pixeloid+Sans&display=swap');
+/* 1. CARREGAR A NOVA FONTE TERMINUS */
+@font-face {
+    font-family: 'Terminus';
+    src: url('https://cdn.jsdelivr.net/npm/terminus-web@4.48.0/terminus-web.woff') format('woff');
+}
 
 body {
     background-color: #000000;
     color: #00FF00;
     
-    /* Nova fonte: Pixeloid Sans */
-    font-family: 'Pixeloid Sans', monospace; 
+    /* Usar a fonte Terminus */
+    font-family: 'Terminus', monospace; 
     
-    /* Remoção da centralização */
     display: flex;
     justify-content: flex-start; 
     align-items: flex-start;
@@ -30,7 +32,6 @@ body {
     color: #00FF00;
     font-size: 3em; 
     
-    /* Cursor */
     border-right: 4px solid #00FF00; 
     white-space: nowrap; 
     margin: 0;
@@ -40,13 +41,11 @@ body {
         blink-caret .75s step-end infinite; 
 }
 
-/* Efeito de piscar do cursor */
 @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: #00FF00; }
 }
 
-/* Estilo do link de acesso/prompt */
 #access-link {
     color: #FFFFFF;
     text-decoration: none;
