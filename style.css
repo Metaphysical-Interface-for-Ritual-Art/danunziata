@@ -1,11 +1,11 @@
-/* ARQUIVO: style.css (Versão Final com o Verde Corrigido) */
+/* ARQUIVO: style.css (Versão Final e Corrigida) */
 
 /* 1. CARREGAR A FONTE VT323 */
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 body {
     background-color: #000000;
-    color: #39FF14; /* NOVO VERDE: Tem o brilho que você quer */
+    color: #39FF14;
     font-family: 'VT323', monospace; 
     
     display: flex;
@@ -24,7 +24,7 @@ body {
 }
 
 #typewriter {
-    color: #39FF14; /* Corrigido para o novo verde */
+    color: #39FF14;
     font-size: 3em; 
     
     border-right: 4px solid #39FF14; 
@@ -53,7 +53,7 @@ body {
 }
 
 #access-link:hover {
-    color: #39FF14; /* Corrigido para o novo verde */
+    color: #39FF14;
 }
 
 /* --- ESTILOS PARA AS PÁGINAS INTERNAS --- */
@@ -71,6 +71,8 @@ nav a {
     margin-right: 15px;
     padding: 5px;
     transition: color 0.3s;
+    display: block;
+    font-size: 1.5em;
 }
 
 nav a:hover, nav a.active {
