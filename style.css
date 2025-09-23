@@ -1,6 +1,6 @@
-/* ARQUIVO: style.css (Versão Final e Corrigida) */
+/* ARQUIVO: style.css (Versão Final e Completa) */
 
-/* 1. CARREGAR AS FONTES */
+/* 1. CARREGAR A FONTE VT323 */
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 body {
@@ -23,6 +23,7 @@ body {
     text-align: left;
 }
 
+/* AUMENTANDO O TAMANHO DA FRASE INICIAL */
 #typewriter {
     color: #39FF14;
     font-size: 3em; 
@@ -65,6 +66,7 @@ header {
     margin-bottom: 20px;
 }
 
+/* AUMENTANDO O TAMANHO DO MENU */
 nav a {
     color: #39FF14;
     text-decoration: none;
@@ -72,7 +74,7 @@ nav a {
     padding: 5px;
     transition: color 0.3s;
     display: block;
-    font-size: 1.5em;
+    font-size: 1.5em; 
 }
 
 nav a:hover, nav a.active {
@@ -85,10 +87,11 @@ nav a:hover, nav a.active {
     margin-bottom: 5px;
 }
 
+/* MUDANDO A FONTE E A COR DO TEXTO DE CONTEÚDO */
 .response {
     color: #C0C0C0;
     margin-top: 0;
     font-size: 1.2em;
     line-height: 1.5em; 
-    font-family: sans-serif;
+    font-family: monospace;
 }
