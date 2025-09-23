@@ -1,12 +1,10 @@
 /* ARQUIVO: style.css (Versão Final e Corrigida) */
 
-/* 1. CARREGAR A FONTE VT323 */
-@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
-
+/* 1. CARREGAR A FONTE MONOSPACE */
 body {
     background-color: #000000;
     color: #39FF14;
-    font-family: 'VT323', monospace; 
+    font-family: 'monospace'; 
     
     display: flex;
     justify-content: flex-start; 
@@ -86,7 +84,7 @@ nav a:hover, nav a.active {
 }
 
 .response {
-    color: #C0C0C0; /* Cor do texto agora é cinza claro */
+    color: #C0C0C0;
     margin-top: 0;
     font-size: 1.2em;
     line-height: 1.5em; 
