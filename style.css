@@ -1,17 +1,14 @@
-/* ARQUIVO: style.css (Versão Final com Fonte Terminus) */
+/* ARQUIVO: style.css (Versão Final com Fonte VT323) */
 
-/* 1. CARREGAR A NOVA FONTE TERMINUS */
-@font-face {
-    font-family: 'Terminus';
-    src: url('https://cdn.jsdelivr.net/npm/terminus-web@4.48.0/terminus-web.woff') format('woff');
-}
+/* 1. CARREGAR A FONTE VT323 */
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 body {
     background-color: #000000;
     color: #00FF00;
     
-    /* Usar a fonte Terminus */
-    font-family: 'Terminus', monospace; 
+    /* Usar a fonte VT323 */
+    font-family: 'VT323', monospace; 
     
     display: flex;
     justify-content: flex-start; 
