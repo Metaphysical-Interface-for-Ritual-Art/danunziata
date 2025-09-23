@@ -90,5 +90,5 @@ nav a:hover, nav a.active {
     margin-top: 0;
     font-size: 1.2em;
     line-height: 1.5em; 
-    font-family: 'Arial', 'Helvetica', sans-serif; /* A fonte do texto agora é moderna e legível */
+    font-family: sans-serif;
 }
