@@ -1,16 +1,13 @@
-/* ARQUIVO: style.css (Versão FINAL com Fonte Monofett e Link Branco) */
+/* ARQUIVO: style.css (Versão Final e Corrigida) */
 
-/* 1. CARREGAR A NOVA FONTE MONOFETT (Pixelada, mas mais 'suave') */
-@import url('https://fonts.googleapis.com/css2?family=Monofett&family=Press+Start+2P&family=VT323&display=swap');
+/* 1. Carregar a fonte Inconsolata */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 
 body {
     background-color: #000000;
-    color: #00FF00; 
+    color: #00FF00; /* Cor padrão para todo o texto */
+    font-family: 'Inconsolata', monospace; /* Fonte com estética de terminal, mas clara */
     
-    /* Nova fonte: Monofett */
-    font-family: 'Monofett', monospace; 
-    
-    /* Remoção da centralização */
     display: flex;
     justify-content: flex-start; 
     align-items: flex-start;
@@ -27,7 +24,9 @@ body {
 }
 
 #typewriter {
-    font-size: 4em; 
+    /* Corrigir a cor do título para o verde neon */
+    color: #00FF00;
+    font-size: 3em; 
     
     /* Cursor */
     border-right: 4px solid #00FF00; 
@@ -47,22 +46,21 @@ body {
 
 /* Estilo do link de acesso/prompt */
 #access-link {
-    /* Cor BRANCA solicitada */
-    color: #FFFFFF; 
+    color: #FFFFFF; /* Cor Branca do link */
     text-decoration: none;
-    font-size: 1.8em; /* Ajustei um pouco o tamanho */
+    font-size: 1.5em; 
     display: block;
-    margin-top: 30px; /* Mais espaço após a frase */
+    margin-top: 30px; 
     cursor: pointer;
     transition: color 0.3s;
     text-align: left; 
 }
 
 #access-link:hover {
-    color: #00FF00; /* Destaque verde neon no hover */
+    color: #00FF00;
 }
 
-/* --- ESTILOS PARA AS PÁGINAS INTERNAS (FUTURO) --- */
+/* --- ESTILOS PARA AS PÁGINAS INTERNAS --- */
 
 header {
     width: 100%;
