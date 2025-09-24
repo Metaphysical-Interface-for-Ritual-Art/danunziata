@@ -6,7 +6,7 @@
 body {
     background-color: #000000;
     color: #39FF14;
-    font-family: 'VT323', courier new; 
+    font-family: 'VT323', monospace; 
     
     display: flex;
     justify-content: flex-start; 
@@ -90,18 +90,42 @@ nav a:hover, nav a.active {
     margin-top: 0;
     font-size: 1.2em;
     line-height: 1.5em; 
-    font-family: sans-serif;
+    font-family: 'Courier New';
 }
 
 /* --- ESTILOS PARA A GALERIA DE TRABALHOS --- */
+
 .gallery {
-    /* ... código ... */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+    margin-top: 20px;
 }
 
 .artwork-card {
-    /* ... código ... */
+    width: 23%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #39FF14;
 }
 
 .artwork-card img {
-    /* ... código ... */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.artwork-card p {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #C0C0C0;
+    padding: 5px;
+    margin: 0;
+    text-align: center;
+    font-size: 0.9em;
 }
