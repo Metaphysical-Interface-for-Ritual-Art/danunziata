@@ -6,7 +6,7 @@
 body {
     background-color: #000000;
     color: #39FF14;
-    font-family: 'VT323', monospace; 
+    font-family: 'VT323', courier new; 
     
     display: flex;
     justify-content: flex-start; 
