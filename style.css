@@ -140,7 +140,16 @@ nav a:hover, nav a.active {
         margin: 0 auto;
         white-space: normal;
     }
-    
+
+    /* 🔥 Aqui entra o ajuste do #typewriter */
+    #typewriter {
+        font-size: 1.5em;        /* diminui no celular */
+        white-space: normal;     /* permite quebra de linha */
+        word-wrap: break-word;   /* quebra se a palavra for grande */
+        max-width: 90%;          /* limita a largura */
+        margin: 0 auto;          /* centraliza */
+    }
+
     /* Ajusta o menu para a tela do celular */
     header nav {
         flex-direction: column;
