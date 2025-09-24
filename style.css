@@ -129,3 +129,35 @@ nav a:hover, nav a.active {
     text-align: center;
     font-size: 0.9em;
 }
+/* Media Queries para Telas Pequenas (Celulares) */
+@media (max-width: 768px) {
+    /* Ajusta o tamanho da fonte na primeira página para evitar cortes */
+    .prompt {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    /* Ajusta o menu para a tela do celular */
+    header nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    /* Corrige o espaçamento do menu */
+    header nav a {
+        margin: 5px 0;
+        text-decoration: none;
+    }
+    
+    /* Muda a galeria de fotos para uma coluna única em celulares */
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Faz com que a imagem ocupe a largura total da tela, com espaçamento nas laterais */
+    .artwork-card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
