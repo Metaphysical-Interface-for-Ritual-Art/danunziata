@@ -131,11 +131,11 @@ nav a:hover, nav a.active {
 }
 /* Media Queries para Telas Pequenas (Celulares) */
 @media (max-width: 768px) {
-    /* Ajusta o tamanho da fonte e a largura da caixa de texto para caber na tela */
+    /* Ajusta o tamanho da fonte da frase inicial para que ela caiba na tela do celular */
     .prompt {
-        font-size: 14px; /* Tamanho da fonte ajustado para caber no celular */
+        font-size: 14px;
         line-height: 1.5;
-        max-width: 90%; 
+        max-width: 90%;
         word-wrap: break-word;
         margin: 0 auto;
         white-space: normal;
