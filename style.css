@@ -131,9 +131,9 @@ nav a:hover, nav a.active {
 }
 /* Media Queries para Telas Pequenas (Celulares) */
 @media (max-width: 768px) {
-    /* Ajusta o tamanho da fonte na primeira página para evitar cortes */
+    /* Ajusta o tamanho da fonte para evitar cortes */
     .prompt {
-        font-size: 14px;
+        font-size: 12px;
         line-height: 1.5;
     }
 
