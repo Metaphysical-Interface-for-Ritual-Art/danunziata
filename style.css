@@ -93,6 +93,16 @@ nav a:hover, nav a.active {
     font-family: 'Courier New', Courier, monospace;
 }
 
+/* ✅ Links dentro de .response (ex: catálogo WhatsApp) */
+.response a {
+    color: #FFFFFF;       /* branco */
+    text-decoration: none;
+}
+
+.response a:hover {
+    color: #39FF14;       /* verde neon no hover */
+}
+
 /* --- ESTILOS PARA A GALERIA DE TRABALHOS --- */
 
 .gallery {
@@ -129,6 +139,7 @@ nav a:hover, nav a.active {
     text-align: center;
     font-size: 0.9em;
 }
+
 /* Media Queries para Telas Pequenas (Celulares) */
 @media (max-width: 768px) {
     /* Ajusta o tamanho da fonte da frase inicial para que ela caiba na tela do celular */
