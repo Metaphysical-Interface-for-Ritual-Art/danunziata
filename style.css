@@ -185,3 +185,23 @@ nav a:hover, nav a.active {
         margin-bottom: 20px;
     }
 }
+/* Estilos apenas para a página interna (artworks.html) */
+body.internal-page {
+    background-color: #FFFFFF;  /* fundo branco */
+    color: #000000;             /* texto preto */
+    font-family: 'Courier New', Courier, monospace; /* tipografia da pesquisa */
+}
+
+body.internal-page header,
+body.internal-page nav a {
+    color: #000000; /* preto também no menu */
+}
+
+body.internal-page .gallery .artwork-card {
+    border: 1px solid #000000;
+}
+
+body.internal-page .artwork-card p {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000000;
+}
