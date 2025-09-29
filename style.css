@@ -235,6 +235,14 @@ body.internal-page footer {
 /* ================================================== */
 /* RESPONSIVO */
 @media (max-width: 768px) {
+    /* PRIMEIRA PÁGINA */
+    #typewriter {
+        font-size: 1.6em;   /* diminui no celular */
+        white-space: normal; /* permite quebra de linha */
+        word-wrap: break-word; 
+    }
+
+    /* PÁGINAS INTERNAS */
     body.internal-page {
         flex-direction: column;
     }
@@ -245,30 +253,26 @@ body.internal-page footer {
         height: auto;
         border-right: none;
         border-bottom: 1px solid #39FF14;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap; /* <-- evita corte no menu */
+        flex-direction: column; /* em coluna */
+        align-items: flex-start; /* alinhado à esquerda */
         padding: 10px;
     }
 
     body.internal-page nav {
-        flex-direction: row;
-        gap: 15px;
-        flex-wrap: wrap; /* <-- links quebram pra baixo se precisar */
-        justify-content: center;
-        margin-top: 0;
+        flex-direction: column; /* links embaixo do outro */
+        gap: 10px;
+        margin-top: 10px;
         width: 100%;
     }
 
     body.internal-page #container {
         margin-left: 0;
         padding: 15px;
-        width: 100%; /* <-- garante que o conteúdo ocupe tudo */
+        width: 100%;
     }
 
     body.internal-page .artwork-card {
-        width: 100%; /* <-- cada obra ocupa a largura inteira no celular */
+        width: 100%;
         height: auto;
     }
 }
