@@ -68,4 +68,207 @@ body {
 body.internal-page {
     background-color: #FFFFFF;
     color: #000000;
-    font-family: 'Courier Pr
+    font-family: 'Courier Prime', Courier, monospace;
+    line-height: 1.6;
+    font-size: 16px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row; /* sidebar + conteúdo lado a lado */
+}
+
+/* SIDEBAR FIXA */
+body.internal-page header {
+    width: 220px;
+    border-right: 1px solid #39FF14;
+    padding: 20px 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+body.internal-page nav {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+body.internal-page nav a {
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+body.internal-page nav a:hover,
+body.internal-page nav a.active {
+    color: #39FF14;
+}
+
+/* CONTEÚDO PRINCIPAL */
+body.internal-page #container {
+    margin-left: 240px; /* espaço pro menu fixo */
+    padding: 20px;
+    flex: 1;
+}
+
+/* TÍTULOS */
+body.internal-page h1,
+body.internal-page h2,
+body.internal-page h3 {
+    font-family: 'Courier Prime', Courier, monospace;
+    color: #39FF14;
+}
+
+body.internal-page h1 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+body.internal-page h2 {
+    font-size: 1.75em;
+    margin-bottom: 10px;
+}
+
+body.internal-page h3 {
+    font-size: 1.5em;
+    margin-bottom: 8px;
+}
+
+/* SEÇÕES */
+body.internal-page section {
+    margin-bottom: 30px;
+    padding: 15px;
+}
+
+/* GALERIA DE TRABALHOS */
+body.internal-page .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+body.internal-page .artwork-card {
+    width: 23%;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #000000;
+    height: 300px;
+}
+
+body.internal-page .artwork-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+body.internal-page .artwork-card p {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000000;
+    padding: 5px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+/* FORMULÁRIO DE CONTATO */
+body.internal-page form {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+body.internal-page label {
+    font-weight: bold;
+}
+
+body.internal-page input,
+body.internal-page textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+body.internal-page input:focus,
+body.internal-page textarea:focus {
+    border-color: #39FF14;
+    outline: none;
+}
+
+body.internal-page button {
+    padding: 10px 15px;
+    background-color: #000000;
+    color: #39FF14;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+body.internal-page button:hover {
+    background-color: #222222;
+}
+
+/* RODAPÉ */
+body.internal-page footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #ffffff;
+    color: #999999;
+    border-top: 1px solid #39FF14;
+    margin-top: 40px;
+}
+
+/* ================================================== */
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    body.internal-page {
+        flex-direction: column;
+    }
+
+    body.internal-page header {
+        position: relative;
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid #39FF14;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap; /* <-- evita corte no menu */
+        padding: 10px;
+    }
+
+    body.internal-page nav {
+        flex-direction: row;
+        gap: 15px;
+        flex-wrap: wrap; /* <-- links quebram pra baixo se precisar */
+        justify-content: center;
+        margin-top: 0;
+        width: 100%;
+    }
+
+    body.internal-page #container {
+        margin-left: 0;
+        padding: 15px;
+        width: 100%; /* <-- garante que o conteúdo ocupe tudo */
+    }
+
+    body.internal-page .artwork-card {
+        width: 100%; /* <-- cada obra ocupa a largura inteira no celular */
+        height: auto;
+    }
+}
