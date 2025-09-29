@@ -63,13 +63,12 @@ body {
 
 /* ================================================== */
 /* PÁGINAS INTERNAS - TODAS AS OUTRAS */
-/* Fonte para páginas internas */
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
 
 body.internal-page {
-    background-color: #FFFFFF;  /* fundo branco */
-    color: #000000;             /* texto preto */
-    font-family: 'Courier Prime', Courier, monospace; /* tipografia da pesquisa */
+    background-color: #FFFFFF;
+    color: #000000;
+    font-family: 'Courier Prime', Courier, monospace;
     line-height: 1.6;
     font-size: 16px;
     min-height: 100vh;
@@ -87,27 +86,23 @@ body.internal-page header {
 
 body.internal-page nav {
     display: flex;
-    gap: 20px;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
+    flex-direction: column; /* menu vertical */
+    gap: 10px;              /* espaço entre links */
+    align-items: flex-start; /* alinha à esquerda */
 }
 
 body.internal-page nav a {
     font-size: 1.2em;
     font-weight: 500;
-    padding: 5px 10px;
-    color: #000000; /* links pretos */
+    padding: 5px 0;        /* padding vertical */
+    color: #000000;         /* links pretos */
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
-body.internal-page nav a:hover {
-    color: #39FF14; /* verde neon */
-}
-
+body.internal-page nav a:hover,
 body.internal-page nav a.active {
-    color: #39FF14; /* item ativo verde neon */
+    color: #39FF14; /* verde neon */
 }
 
 /* TÍTULOS */
@@ -115,7 +110,7 @@ body.internal-page h1,
 body.internal-page h2,
 body.internal-page h3 {
     font-family: 'Courier Prime', Courier, monospace;
-    color: #39FF14; /* verde neon para títulos/destaques */
+    color: #39FF14;
 }
 
 body.internal-page h1 {
