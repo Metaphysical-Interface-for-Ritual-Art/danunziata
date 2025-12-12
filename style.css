@@ -231,7 +231,16 @@ body.internal-page footer {
     border-top: 1px solid #39FF14;
     margin-top: 40px;
 }
+body.internal-page button:hover {
+    background-color: #222222;
+}
 
+/* ================================================== */
+/* OCULTAR LINK 'DESIGN' DO MENU */
+body.internal-page nav a[href*="design.html"] {
+    display: none !important;
+
+}
 /* ================================================== */
 /* RESPONSIVO */
 @media (max-width: 768px) {
